@@ -1,0 +1,153 @@
+{
+  "menu": {
+    "chicken": [
+      {
+        "title": "1/4_chicken",
+        "imgUrl": "/chicken.jpg",
+        "options": [
+          {
+            "value": "1/4_chicken_spicyRice_side",
+            "label": "1/4 Chicken + Spicy Rice & Side",
+            "price": 54.99,
+            "category": "1/4_chicken",
+            "qty": 1
+          },
+          {
+            "value": "1/4_chicken_pap_side",
+            "label": "1/4 Chicken + Pap & Side",
+            "price": 54.99,
+            "category": "1/4_chicken",
+            "qty": 1
+          },
+          {
+            "value": "1/4_chicken_sesami/portuegeseRoll_smallFries",
+            "label": "1/4 Chicken Sesami/Portuegese Roll + Small Fries",
+            "price": 49.99,
+            "category": "1/4_chicken",
+            "qty": 1
+          },
+          {
+            "value": "1/4_chicken_mediumFries",
+            "label": "1/4 Chicken Medium Fries",
+            "price": 44.99,
+            "category": "1/4_chicken",
+            "qty": 1
+          }
+        ],
+        "extraOptions": [
+          { "value": "extra_chicken_fillet", "label": "Extra chicken fillet" },
+          { "value": "extra_cheese", "label": "Extra Cheese Slice" }
+        ]
+      },
+      {
+        "title": "1/2_chicken",
+        "imgUrl": "/chicken.jpg",
+        "options": [
+          {
+            "value": "1/2_chicken_spicyRice_side",
+            "label": "1/2 Chicken + Spicy Rice & Side",
+            "price": 84.99,
+            "category": "1/2_chicken",
+            "qty": 1
+          },
+          {
+            "value": "1/2_chicken_pap_side",
+            "label": "1/2 Chicken + Pap & Side",
+            "price": 84.99,
+            "category": "1/2_chicken",
+            "qty": 1
+          },
+          {
+            "value": "1/2_chicken_sesami/portuegeseRoll_smallFries",
+            "label": "1/2 Chicken Sesami/Portuegese Roll + Small Fries",
+            "price": 79.99,
+            "category": "1/2_chicken",
+            "qty": 1
+          },
+          {
+            "value": "1/2_chicken_mediumFries_rolls",
+            "label": "1/2 Chicken Medium Fries + Rolls",
+            "price": 84.99,
+            "category": "1/2_chicken",
+            "qty": 1
+          }
+        ],
+        "extraOptions": [
+          { "value": "extra_chicken_fillet", "label": "Extra chicken fillet" },
+          { "value": "extra_cheese", "label": "Extra Cheese Slice" }
+        ]
+      },
+      {
+        "title": "full_chicken",
+        "imgUrl": "/chicken.jpg",
+        "options": [
+          {
+            "value": "full_chicken_2pap",
+            "label": "Full Chicken + 2 pap",
+            "price": 139.99,
+            "category": "full_chicken",
+            "qty": 1
+          },
+          {
+            "value": "full_chicken_2Xpap_spicyRice_side",
+            "label": "ful Chicken + 2X Pap or 2X Spicy Rice & Side",
+            "price": 149.99,
+            "category": "full_chicken",
+            "qty": 1
+          },
+          {
+            "value": "full_chicken_largeFries",
+            "label": "full Chicken + Large Fries",
+            "price": 139.99,
+            "category": "full_chicken",
+            "qty": 1
+          }
+        ],
+        "extraOptions": [
+          { "value": "extra_chicken_fillet", "label": "Extra chicken fillet" },
+          { "value": "extra_cheese", "label": "Extra Cheese Slice" }
+        ]
+      }
+    ],
+    "quick bowls": [
+      {
+        "title": "quick_bowls",
+        "imgUrl": "/quick_bowls.jpg",
+        "options": [
+          {
+            "value": "rice_chicken_strips",
+            "label": "Rice & Chicken Strips",
+            "price": 54.99,
+            "category": "quick_bowls",
+            "qty": 1
+          },
+          {
+            "value": "pap_chicken_strips",
+            "label": "Pap & Chicken Strips",
+            "price": 54.99,
+            "category": "quick_bowls",
+            "qty": 1
+          },
+          {
+            "value": "chicken_salad",
+            "label": "Chicken Salad",
+            "price": 49.99,
+            "category": "quick_bowls",
+            "qty": 1
+          },
+          {
+            "value": "stir_fry",
+            "label": "Stir Fry",
+            "price": 54.99,
+            "category": "quick_bowls",
+            "qty": 1
+          }
+        ],
+        "extraOptions": [
+          { "value": "extra_chicken_fillet", "label": "Extra chicken fillet" },
+          { "value": "extra_cheese", "label": "Extra Cheese Slice" }
+        ]
+      }
+    ]
+  }
+}

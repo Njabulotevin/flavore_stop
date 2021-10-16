@@ -1,0 +1,66 @@
+@use "sass:math";
+
+// Breakpoints
+@media (min-width: 64em) {
+  // styles go here
+}
+
+// 640px, 1024px, 1400px
+$breakpoints-up: (
+  "medium": "40em",
+  "large": "64em",
+  "xlarge": "87.5em",
+  "heightUp": "43.75em",
+);
+
+// 639px, 1023px, 1399px
+$breakpoints-down: (
+  "small": "39.9375em",
+  "medium": "63.9375em",
+  "large": "87.4375em",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-up-height($size) {
+  @media (min-height: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+@function toRems($pixels) {
+  $results: 0rem;
+  @return math.div($pixels, 16) + rem;
+}
+
+@mixin flexbox($direction, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: map-get($position, $justify);
+  align-items: map-get($position, $align);
+  gap: toRems($gap);
+}
+
+$position: (
+  "center": center,
+  "around": space-around,
+  "between": space-between,
+  "end": flex-end,
+  "start": flex-start,
+  "stretch": "stretch",
+  "none": none,
+);
+
+@function short($topBottom, $leftRight) {
+  @return toRems($topBottom) toRems($leftRight);
+}

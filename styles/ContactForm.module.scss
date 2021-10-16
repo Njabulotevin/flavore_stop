@@ -1,0 +1,54 @@
+@import "variables";
+@import "mixins";
+
+.wrapper {
+  padding: toRems(72);
+  background-color: $color-primary;
+  text-align: center;
+  margin-top: toRems(60);
+  form {
+    .input {
+      border: toRems(1) solid $color-lightGrey;
+      background-color: transparent;
+      padding: toRems(16);
+      margin-bottom: toRems(20);
+      color: $color-white;
+      font-size: toRems(15);
+      border-radius: toRems(4);
+      text-align: left;
+    }
+    label {
+      color: $color-lightGrey;
+      font-size: toRems(16);
+      margin-bottom: toRems(14);
+      display: inline-block;
+      width: 100%;
+    }
+    button {
+      background-color: $color-secondary;
+      color: $color-primary;
+      padding: toRems(17);
+      width: 100%;
+      border-radius: toRems(4);
+      border: none;
+    }
+  }
+  @include breakpoint-up(medium) {
+    @include flexbox(column, center, center, 0);
+    form {
+      text-align: left;
+      width: toRems(490);
+      .name_surname {
+        @include flexbox(row, start, center, 30);
+      }
+      @include flexbox(column, start, center, 0);
+      .input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.subTitle {
+  color: $color-secondary;
+}

@@ -1,0 +1,71 @@
+@import "imports";
+.wrapper {
+  width: toRems(340);
+  margin: toRems(30) auto;
+  box-shadow: $box-elevate;
+  border-radius: toRems(6);
+}
+
+.topWrapper {
+  height: toRems(215);
+  background-color: $color-secondary;
+  border-top-left-radius: toRems(6);
+  border-top-right-radius: toRems(6);
+  @include flexbox(row, center, center, 0);
+}
+.select {
+  margin-bottom: toRems(16);
+}
+.options {
+  padding: toRems(35);
+}
+
+.priceWrapper {
+  @include flexbox(row, between, center, 0);
+  .totalPrce {
+    p {
+      margin-bottom: 0;
+    }
+    h4 {
+      margin: 0;
+      font-size: toRems(21);
+    }
+  }
+  button {
+    border: none;
+    background-color: $color-secondary;
+    color: $color-primary;
+    padding: toRems(9) toRems(32);
+    border-radius: toRems(5);
+  }
+}
+
+.orderDish {
+  @include flexbox(row, start, start, 20);
+  margin-top: 0;
+  margin-bottom: toRems(20);
+  h5 {
+    margin-top: 0;
+  }
+  p {
+    margin-top: 0;
+  }
+}
+
+.orderImage {
+  width: toRems(90);
+  height: toRems(90);
+  border-radius: toRems(5);
+}
+
+.dishQty {
+  @include flexbox(row, start, center, 10);
+  button {
+    border: none;
+    color: $color-white;
+    background-color: $color-primary;
+    width: toRems(30);
+    height: toRems(30);
+    border-radius: toRems(3);
+  }
+}

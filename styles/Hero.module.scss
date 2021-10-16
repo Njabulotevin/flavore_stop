@@ -1,0 +1,30 @@
+@import "imports";
+
+.wrapper {
+  background: url(/mobile_bg.png);
+  width: 100vw;
+  height: 80vh;
+}
+
+.topWrapper {
+  @include flexbox(row, between, center, 0);
+  padding: toRems(30) toRems(20);
+  .logo {
+    width: toRems(74);
+    height: toRems(49);
+  }
+}
+
+.headline {
+  text-align: center;
+  h1 {
+    color: $color-secondary;
+
+    font-size: toRems(52);
+    padding: toRems(0) toRems(50);
+  }
+  h3 {
+    color: $color-white;
+  }
+  color: $color-white;
+}
