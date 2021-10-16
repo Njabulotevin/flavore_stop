@@ -12,10 +12,10 @@ function Hero() {
       <div className={styles.headline}>
         <h1>Let's meet at taste</h1>
         <h3>Today's Special</h3>
-        <p>1/4 Chicken............. R69.90</p>
-        <p>1/4 Chicken............. R69.90</p>
-        <p>1/4 Chicken............. R69.90</p>
-        <p>1/4 Chicken............. R69.90</p>
+        <p>1/4 Chicken.............. R69.90</p>
+        <p>1/4 Chicken.............. R69.90</p>
+        <p>1/4 Chicken.............. R69.90</p>
+        <p>1/4 Chicken.............. R69.90</p>
       </div>
     </div>
   );
